@@ -1,5 +1,9 @@
 # GhostPost-BackendREST-API-React
 
+THE LINK TO THE FRON-END >>> https://github.com/Ybrayym-Abamov/GhostPost-FrontEnd
+
+REFERENCE >>> https://medium.com/profil-software-blog/10-things-you-need-to-know-to-effectively-use-django-rest-framework-7db7728910e0
+
 Back-end API using Django Rest Framework
 
 As the internet becomes bigger and applications become more complex, the "simple" front end we all know and love is slowly dying. It still works well for certain types of websites, but the user (and the developers) are getting more and more accustomed to a more complex, but more extendable, way of building things.
