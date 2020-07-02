@@ -8,10 +8,14 @@ class BoastsRoasts(models.Model):
     upvotes = models.IntegerField(default=0)
     downvotes = models.IntegerField(default=0)
     datetime = models.DateTimeField(default=timezone.now)
-    score = models.IntegerField(default=0)
     secret_id = models.CharField(unique=True, max_length=10)
 
     def __str__(self):
         if self.boolean:
             return "Boast"
         return "Roast"
+
+    # difference of upvotes and downvotes
+    @property
+    def score(self):
+        return (self.upvotes - self.downvotes)
