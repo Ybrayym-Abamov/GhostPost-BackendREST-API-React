@@ -5,12 +5,6 @@ from django.utils import dateformat
 from api.models import BoastsRoasts
 
 
-class ExcludeId(ModelSerializer):
-    class Meta:
-        # https://www.django-rest-framework.org/api-guide/serializers/
-        exclude = ['secret_id']
-
-
 class BoastsRoastsSerializer(ModelSerializer):
     score = SerializerMethodField(method_name='calculate_score')
     posted_time = SerializerMethodField(method_name='calculate_posted_time')
@@ -24,7 +18,8 @@ class BoastsRoastsSerializer(ModelSerializer):
             'upvotes',
             'downvotes',
             'score',
-            'posted_time'
+            'posted_time',
+            'secret_id'
         ]
 
     def calculate_score(self, instance):
