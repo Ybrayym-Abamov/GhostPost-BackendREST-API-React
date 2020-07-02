@@ -6,7 +6,7 @@ As the internet becomes bigger and applications become more complex, the "simple
 
 The purpose of this project is to build a React front end that interfaces with a Django Rest Framework back end running on the same machine.
 
-The GhostPost Machine™ is a website where people can anonymously post Boasts or Roasts of whatever they want. Like Twitter, there is a character limit: 280 characters. We are deliberately not dealing with logins, as that is outside the scope of the project (and beyond our time constraints). 
+The GhostPost Machine™ is a website where people can anonymously post Boasts or Roasts of whatever they want. Like Twitter, there is a character limit: 280 characters. We are deliberately not dealing with logins, as that is outside the scope of the project (and beyond our time constraints).
 
  
 
